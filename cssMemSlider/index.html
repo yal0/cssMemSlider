@@ -8,21 +8,23 @@
     <title>cssMemSlider</title>
 </head>
 <body>
-    <div class="wrapper">
+    <main>
         <ul class="slider">
             <li class="item">
-                <img src="img/slide1.jpg" alt="">
+                <img src="./assets/img/1.jpg" alt="">
             </li>
         </ul>
-        <div class="slider-text">Заголовок слайда</div>
-        <ul class="slider-dots">
-            <li onclick="showSlide(1)" class="active"></li> 
-            <li onclick="showSlide(2)"></li> 
-            <li onclick="showSlide(3)"></li> 
-            <li onclick="showSlide(4)"></li> 
-            <li onclick="showSlide(5)"></li> 
-        </ul>
-    </div>
+        <div class="slider-controls">
+            <ul class="slider-dots">
+                <li onclick="showSlide(1)" class="active"></li> 
+                <li onclick="showSlide(2)"></li> 
+                <li onclick="showSlide(3)"></li> 
+                <li onclick="showSlide(4)"></li> 
+                <li onclick="showSlide(5)"></li> 
+            </ul>
+            <div class="slider-text">Заголовок слайда</div>
+        </div>
+    </main>
     <Script src="script.js"></Script>
 </body>
 </html>
