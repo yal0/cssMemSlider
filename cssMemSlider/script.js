@@ -2,11 +2,11 @@
 var slideIndex = 0;
 
 const MEM=[
-    ["./assets/img/1.jpg", "text 1"],
-    ["./assets/img/2.jpg", "text 2"],
-    ["./assets/img/3.jpg", "text 3"],
-    ["./assets/img/4.jpg", "text 4"],
-    ["./assets/img/5.jpg", "text 5"],
+    ["./assets/img/0.png", "Fullstack Developer"],
+    ["./assets/img/1.png", "Не смотрите на меня"],
+    ["./assets/img/2.png", "Работает — не трогай"],
+    ["./assets/img/3.png", "Ещё больше костылей"],
+    ["./assets/img/4.png", "Fullstack за работой"],
 ];
 
 
