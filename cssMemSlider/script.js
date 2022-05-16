@@ -4,9 +4,8 @@ var slideIndex = 0;
 const MEM=[
     ["./assets/img/0.png", "Fullstack Developer"],
     ["./assets/img/1.png", "Не смотрите на меня"],
-    ["./assets/img/2.png", "Работает — не трогай"],
-    ["./assets/img/3.png", "Ещё больше костылей"],
-    ["./assets/img/4.png", "Fullstack за работой"],
+    ["./assets/img/2.png", "Больше костылей"],
+    ["./assets/img/3.png", "Fullstack за работой"],
 ];
 
 
