@@ -72,13 +72,23 @@ li{
 }
 
 .slider-dots span:hover{
-    background-color: #ccc;
-    border-color: #ccc;
+    background-color: #eee;
+    border-color: #eee;
 }
 
 .slider-dots li.active span:hover {
     background-color: transparent;
-    border-color: #ccc;
+    border-color: #eee;
+}
+
+.slider-dots span:active{
+    background-color: #777;
+    border-color: #777;
+}
+
+.slider-dots li.active span:active {
+    background-color: transparent;
+    border-color: #777;
 }
 
 .slider-dots li.active span{
