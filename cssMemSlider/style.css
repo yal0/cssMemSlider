@@ -10,15 +10,15 @@ main{
 
 ul{
     list-style: none;
-    margin: 0px;
-    padding:0px;
+    margin: 0;
+    padding:0;
     text-align: center;
 }
 
 li{
     list-style: none;
-    margin: 0px;
-    padding:0px;
+    margin: 0;
+    padding:0;
 }
 
 /* Слайдер, картинка */
@@ -30,7 +30,7 @@ li{
     object-fit: contain;
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 /* Подпись и переключение картинок*/
@@ -47,25 +47,25 @@ li{
 }
 
 .slider-text {
-    font-size: 1.4em;
-    padding-top:5px;
+    font-size: 1.3em;
+    padding-top:0.3rem;
 }
 
 /* точки переключатели */
 .slider-dots li
 {
     cursor: pointer;
-    margin: 0 1px;
-    padding:8px 5px 5px;
+    margin: 0 0.1rem;
+    padding:0.3rem 0.2rem 0.2rem;
     display: inline-block;
 }
 
 .slider-dots span
 {
-    height: 16px;
-    width: 16px;   
+    height: 0.9rem;
+    width: 0.9rem;   
     background-color: #7da6d8;
-    border: 2px solid #7da6d8;
+    border: 0.1rem solid #7da6d8;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -93,7 +93,7 @@ li{
 
 .slider-dots li.active span{
     background-color: transparent;
-    border: 2px solid #7da6d8;
+    border: 0.1rem solid #7da6d8;
 }
 
 /* мобильная версия */
