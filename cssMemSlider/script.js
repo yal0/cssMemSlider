@@ -43,8 +43,10 @@ function showSlide(n) {
 
 sliderDots.addEventListener('click', function (e) {
     // event.currentTarget это ul 
-    // event.target это li
-    showSlide([...e.target.parentNode.children].indexOf(e.target));
+    // event.target это li или span
+    let li;
+    li = ( e.target.tagName === "LI" ) ? e.target : e.target.parentNode;
+    showSlide([...e.currentTarget.children].indexOf(li));
 });
 
 showSlide(0);

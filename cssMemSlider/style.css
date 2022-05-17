@@ -48,15 +48,22 @@ li{
 
 .slider-text {
     font-size: 1.4em;
+    padding-top:5px;
 }
 
 /* точки переключатели */
 .slider-dots li
 {
     cursor: pointer;
+    margin: 0 1px;
+    padding:8px 5px 5px;
+    display: inline-block;
+}
+
+.slider-dots span
+{
     height: 16px;
-    width: 16px;
-    margin: 0 2px;
+    width: 16px;   
     background-color: #7da6d8;
     border: 2px solid #7da6d8;
     border-radius: 50%;
@@ -64,19 +71,19 @@ li{
     transition: background-color 0.6s ease;
 }
 
-.slider-dots li:hover{
+.slider-dots span:hover{
     background-color: #ccc;
     border-color: #ccc;
 }
 
-.slider-dots li.active:hover {
+.slider-dots li.active span:hover {
     background-color: transparent;
     border-color: #ccc;
 }
 
-.slider-dots li.active {
+.slider-dots li.active span{
     background-color: transparent;
-    border: 1px solid #7da6d8;
+    border: 2px solid #7da6d8;
 }
 
 /* мобильная версия */
