@@ -1,6 +1,3 @@
-/* Индекс слайда по умолчанию */
-var slideIndex = 0;
-
 const MEM=[
     ["./assets/img/0.png", "Fullstack Developer"],
     ["./assets/img/1.png", "Не смотрите на меня"],
@@ -11,25 +8,36 @@ const MEM=[
 
 function showSlide(n) {
     let i;
-    let slides = document.getElementsByClassName("item");
-    let dots = document.getElementsByClassName("dot");
+    let sliderImage = document.querySelector(".slider").children[0];
     let text = document.querySelector(".slider-text");
-    slideIndex = n;
-    // if (n > slides.length) {
-    //   slideIndex = 1
-    // }
-    // if (n < 1) {
-    //     slideIndex = slides.length
-    // }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+    let dots = document.getElementsByClassName("dot");
+
+    let imgAnimation="zoomOut";
+    let textAnimation="bounceInRight";
+
+    text.classList.add("animated");
+    sliderImage.classList.add("animated");
+    text.classList.add(textAnimation);
+    sliderImage.classList.add(imgAnimation);
+
+    text.addEventListener('animationend', function (e) {
+        text.classList.remove("animated");
+        text.classList.remove(textAnimation);
+    });
+
+    sliderImage.addEventListener('animationend', function (e) {
+        sliderImage.classList.remove("animated");
+        sliderImage.classList.remove(imgAnimation);
+    });
+
+    sliderImage.src=MEM[n][0];
+    text.innerHTML=MEM[n][1];
+
     for (i = 0; i < dots.length; i++) {
         dots[i].classList.remove("active");
     }
-    slides[slideIndex].style.display = "block";
-    dots[slideIndex].classList.add("active");
-    text.innerHTML=MEM[n][1];
+    dots[n].classList.add("active");
 }
 
-showSlide(slideIndex);
+showSlide(0);
+

@@ -4,7 +4,7 @@ body {
 }
 
 main{
-    width: 42vw;
+    width: 40vw;
     margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@ li{
 .slider{
     margin: 4vh auto 0;
 }
-/* Картинка растягивается, лишнее отрезается */
+
 .slider img {
     object-fit: contain;
     width: 100%;
@@ -62,7 +62,6 @@ li{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    /*border: 1px solid red;*/
 }
 
 .slider-dots li:hover{
@@ -92,27 +91,3 @@ li{
     }
 
   }
-
-/* Анимация слайдов */
-.slider .item {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
