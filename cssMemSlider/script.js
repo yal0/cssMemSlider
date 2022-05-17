@@ -5,6 +5,8 @@ const MEM=[
     ["./assets/img/3.png", "Fullstack за работой"],
 ];
 
+// кнопки управления
+let sliderDots = document.querySelector(".slider-dots");
 
 function showSlide(n) {
     let i;
@@ -38,6 +40,12 @@ function showSlide(n) {
     }
     dots[n].classList.add("active");
 }
+
+sliderDots.addEventListener('click', function (e) {
+    // event.currentTarget это ul 
+    // event.target это li
+    showSlide([...e.target.parentNode.children].indexOf(e.target));
+});
 
 showSlide(0);
 
