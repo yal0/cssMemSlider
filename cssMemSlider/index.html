@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animate.min.css">
-    <title>cssMemSlider</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.min.css">
+        <title>cssMemSlider</title>
+    </head>
 <body>
     <main>
-        <div class="slider">
-            <img src="./assets/img/0.png" alt="">
+        <input id="radio-1" type="radio" name=controls checked>
+        <input id="radio-2" type="radio" name=controls>
+        <input id="radio-3" type="radio" name=controls>
+        <input id="radio-4" type="radio" name=controls>
+        <div class="slider-mem">
+          <div class="img-container">
+            <img src="assets/img/0.png" alt="Fullstack Developer">
+            <img src="assets/img/1.png" alt="Больше костылей">
+            <img src="assets/img/2.jpg" alt="Просто о сложном">
+            <img src="assets/img/3.jpg" alt="Решаю задачки с собеседования, на раз-два">
+          </div>
         </div>
-        <div class="slider-controls">
-            <ul class="slider-dots">
-                <li class="dot active"><span></span></li> 
-                <li class="dot"><span></span></li> 
-                <li class="dot"><span></span></li> 
-                <li class="dot"><span></span></li>
-            </ul>
-            <div class="slider-text">Fullstack Developer</div>
+        <div class="slider-text">
+          <div class="text-container">
+            <p>Fullstack Developer</p>
+            <p>Больше костылей</p>
+            <p>Просто о сложном</p>
+            <p>Решаю задачки с собеседования, на раз-два</p>
+          </div>
+        </div>
+        <div class="slider-dots">
+            <label class="radio-label" for="radio-1">
+                <div class="fake-button"></div>
+            </label>
+            <label class="radio-label" for="radio-2">
+                <div class="fake-button"></div>
+            </label>
+            <label class="radio-label" for="radio-3">
+                <div class="fake-button"></div>
+            </label>
+            <label class="radio-label" for="radio-4">
+                <div class="fake-button"></div>
+          </label>
         </div>
     </main>
-    <Script src="script.js"></Script>
 </body>
 </html>
